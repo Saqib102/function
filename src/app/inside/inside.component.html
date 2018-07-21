@@ -1,0 +1,17 @@
+
+<div *ngFor ="let clr of color; index as s">
+  <div *ngIf ></div>
+  <h2>{{s}}: {{clr}}</h2>
+</div>
+<div [ngSwitch]= "property">
+  <div *ngSwitchCase = "'Red'"> Color is set to be red</div>
+  <div *ngSwitchCase = "'green'"> Color is set to be green</div>
+  <div *ngSwitchCase = "'blue'"> Color is set to be blue</div>
+</div>
+<div>
+  <h2> Hello {{parentData}}</h2>
+</div>
+<button  (click) = "event()"> child to parent</button>
+<h2>{{name | titlecase}}</h2>
+<h2>{{2 | number: '1.1-1'}}</h2>
+<h2>{{sName | slice: 1:6}}</h2>
