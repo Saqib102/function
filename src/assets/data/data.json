@@ -1,0 +1,11 @@
+[
+    { "id": 1, "fname": "Saqib", "sallery": 5000, "status": "student"},
+    { "id": 2, "fname": "Tayyab", "sallery": 4000, "status": "employee"},
+    { "id": 3, "fname": "Ahmad", "sallery": 6000, "status": "student"},
+    { "id": 4, "fname": "Abu turab", "sallery": 3000, "status": "student"},
+    { "id": 5, "fname": "Abu Bakr", "sallery": 7000, "status": "student"},
+    { "id": 6, "fname": "Nasir", "sallery": 2000, "status": "employee"},
+    { "id": 7, "fname": "Haji", "sallery": 8000, "status": "student"},
+    { "id": 8, "fname": "Abu Zar", "sallery": 9000, "status": "student"}
+        
+]

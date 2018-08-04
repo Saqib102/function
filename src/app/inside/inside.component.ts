@@ -6,15 +6,22 @@ import { Component, OnInit,Input, Output , EventEmitter } from '@angular/core';
   styleUrls: ['./inside.component.css']
 })
 export class InsideComponent implements OnInit {
+  public binding = "";
  public color = ["red", "blue","green","orange"];
  public property = "Red";
- public name = "welcomr to angular";
+ public name = "welcome to this page";
  public sName = "aSaqiba";
+ public piping = {
+
+  firstName : "Muhammad",
+  lastName : "Saqib"
+ } 
+ public date = new Date();
  @Input() public parentData;
-@Output() public childEvent = new EventEmitter();
+@Output() public childEvent = new EventEmitter(); /* instence of event emitter class */
 
-  constructor() { }
-
+  constructor() { } /* this will give the instence of EmployeeServeice*/
+ /* make use of service instence to fetch the employee data */
   ngOnInit() {
   }
   event()

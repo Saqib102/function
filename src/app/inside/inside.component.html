@@ -1,17 +1,34 @@
-
-<div *ngFor ="let clr of color; index as s">
-  <div *ngIf ></div>
-  <h2>{{s}}: {{clr}}</h2>
-</div>
-<div [ngSwitch]= "property">
-  <div *ngSwitchCase = "'Red'"> Color is set to be red</div>
-  <div *ngSwitchCase = "'green'"> Color is set to be green</div>
-  <div *ngSwitchCase = "'blue'"> Color is set to be blue</div>
-</div>
+<h2 style="font-style: italic">use of ngfor directive</h2>
+  <div *ngFor ="let clr of color; index as s">
+    <div>{{s}}: {{clr}}</div>
+  </div>
+<hr>
+<h2 style="font-style: italic">use of ng switch directive</h2>
+  <div [ngSwitch]= "property">
+    <div *ngSwitchCase = "'Red'"> Color is set to be red</div>
+    <div *ngSwitchCase = "'green'"> Color is set to be green</div>
+    <div *ngSwitchCase = "'blue'"> Color is set to be blue</div>
+  </div>
+<hr>
 <div>
-  <h2> Hello {{parentData}}</h2>
+  <h2 style="font-style: italic">Component Iteractions from child to parent</h2>
+  <div style="font-style: italic"> Hello! {{parentData}}</div>
 </div>
-<button  (click) = "event()"> child to parent</button>
-<h2>{{name | titlecase}}</h2>
-<h2>{{2 | number: '1.1-1'}}</h2>
-<h2>{{sName | slice: 1:6}}</h2>
+<button  (click) = "event()" class="btn btn-primary"> Child To Parent</button>
+<hr>
+<div>
+  <div>
+    <h2 style="font-style: italic">use of piping</h2>
+    <div>{{name | titlecase}}</div>
+  </div>
+  <div>{{2 | number: '1.1-1'}}</div>
+  <div> {{piping | json}} </div>
+</div>
+<hr>
+<h2 style="font-style: italic">Use of two way data binding</h2>
+  <input [(ngModel)]="binding" type="text">
+  <div>{{binding}}</div>
+  length of the text is :{{binding.length}}
+<br><br>
+<div><input type="date"></div>
+<hr>

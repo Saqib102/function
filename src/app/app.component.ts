@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component ,OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,7 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  public name = "Data coming from App Component";
+  public name = "Data is coming from App Component to the child component.";
   public Message = "";
 
+ngOnInit()
+{
+
 }
+
+}
+
